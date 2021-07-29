@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/malla-curriculars",
+      "handler": "malla-curricular.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/malla-curriculars/count",
+      "handler": "malla-curricular.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/malla-curriculars/:id",
+      "handler": "malla-curricular.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/malla-curriculars",
+      "handler": "malla-curricular.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/malla-curriculars/:id",
+      "handler": "malla-curricular.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/malla-curriculars/:id",
+      "handler": "malla-curricular.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

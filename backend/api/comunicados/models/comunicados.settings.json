@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comunicados",
+  "info": {
+    "name": "Comunicados",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titulo_c": {
+      "type": "string"
+    },
+    "portada_c": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "titulo_c"
+    }
+  }
+}

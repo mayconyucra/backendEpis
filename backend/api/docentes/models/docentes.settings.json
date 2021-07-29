@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "docentes",
+  "info": {
+    "name": "docentes"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombres": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "grado": {
+      "type": "string"
+    },
+    "perfil": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
